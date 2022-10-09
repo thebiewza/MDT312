@@ -1,0 +1,157 @@
+body{
+    background-color: bisque;
+}
+
+.flex_dessert{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex_dessert > div{
+    border: 1px dotted rgb(218, 137, 32);
+    width: 400px;
+    padding: 1%;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.flex_dessert2{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex_dessert2 > div{
+    border: 1px dotted rgb(218, 137, 32);
+    width: 400px;
+    padding: 1%;
+    margin: auto;
+    border-radius: 40px;
+}
+
+img{
+    width: 95%;
+    border-radius: 40px;
+}
+
+h1{
+    background-color: rgb(94, 214, 120);
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    text-shadow: -1px 1px gray;
+    text-align: center;
+}
+
+h2{
+    color: orangered;
+    text-shadow: -1px 1px gray;
+}
+
+hr{    
+    height: 5px;
+    background-color: darkgreen;
+    border: none;
+}
+
+li{
+    font-size: larger;
+    font-style: italic;
+}
+
+.reference{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% auto 20%;
+    grid-gap: 10px;
+    margin: auto;
+}
+
+.grid-container > div{
+    border: 3px solid black;
+    font-size: 30px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#header{
+	grid-column: 1 / span 3;
+}
+
+#menuBar{
+    grid-column: 1 / span 1;
+}
+
+#main{
+    grid-column:  2 / span 1;
+}
+
+#AdsPic{
+    grid-column: 3 / span 1;
+}
+
+#footer{
+	grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto 20%;
+        grid-gap: 10px;  
+	}
+
+	#header{
+		grid-column: 1 / span 2;
+	}
+
+    #menuBar{
+        grid-column: 1 / span 2;
+        text-align: left;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+
+    #AdsPic{
+        grid-column: 2 / span 1;
+    }
+
+	#footer{
+        grid-column: 1 / span 2;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+        grid-gap: 10px; 
+	}
+	#header{
+		grid-column: 1 / span 1;
+	}
+
+    #menuBar{
+        grid-column: 1 / span 1;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+
+    #AdsPic{
+        grid-column: 1 / span 1;
+    }
+
+	#footer{
+        grid-column: 1 / span 1;
+	}
+}
