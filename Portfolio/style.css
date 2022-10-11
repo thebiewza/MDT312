@@ -1,0 +1,404 @@
+body{
+    background-color: #41813b;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 60% auto;
+}
+hr{
+    background-color: rgb(112, 30, 30);
+    width: auto;
+    height: 15px;
+    border: none;
+    border-radius: 20px;
+}
+#header{
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    background-position: center;
+    border-radius: 20px;
+
+    grid-column: 1 / span 2;
+}
+.head-container{
+    padding: 10px 10%;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    font-size: 300%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav h1 span{
+    color: brown;
+}
+nav ul li a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 20px;
+}
+.MyPic{
+    width: 80%;
+    border-radius: 20px;
+    float: left;
+    margin: 20px 5%;
+
+    grid-column: 1 / span 1;
+}
+#main{
+    margin: auto;
+    text-align: left;
+    font-size: 200%;
+    display: flex;
+    flex-wrap: wrap;
+
+    grid-column: 2 / span 1;
+}
+#main p{
+    color: whitesmoke;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+#main span{
+    color: white;
+    font-size: 230%;
+    font-weight: bolder;
+    text-shadow: 5px 5px black;
+    
+}
+.about{
+    grid-column: 1 / span 2;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.about h1{
+    color: white;
+    font-size: 300%;
+    padding-left: 40px;
+    text-shadow: 3px 3px black;
+}
+.about p{
+    color: whitesmoke;
+    font-size: 20px;
+    padding-left: 80px;
+}
+.about h4{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+.about span{
+    color: rgb(145, 39, 39);
+    font-size: 200%;
+}
+.skill{
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+.skill h1{
+    color: white;
+    font-size: 400%;
+    text-shadow: 3px 3px black;
+}
+.div-display{
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    padding: 40px;
+}
+.interest{
+    grid-column: 1 / span 2;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.interest h1{
+    color: white;
+    font-size: 350%;
+    padding-left: 40px;
+    text-shadow: 3px 3px black;
+}
+.interest ul li{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.interest ul li span{
+    font-weight: bolder;
+    color: rgb(112, 30, 30);
+}
+.work{
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+.work h1{
+    color: white;
+    font-size: 350%;
+    padding-left: 40px;
+    text-shadow: 3px 3px black;
+}
+.AsButton button{
+    border: none;
+    border-radius: 20px;
+    padding: 32px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+#Ass4 {
+    background-color: white; 
+    color: black; 
+}
+  
+#Ass4:hover {
+    background-color: green;
+    color: white;
+}
+  
+#Ass5 {
+    background-color: white; 
+    color: black; 
+}
+  
+#Ass5:hover {
+    background-color: #008CBA;
+    color: white;
+}
+#Ass6 {
+    background-color: white; 
+    color: black; 
+}
+  
+#Ass6:hover {
+    background-color: firebrick;
+    color: white;
+}
+  
+#Ass7 {
+    background-color: white; 
+    color: black; 
+}
+  
+#Ass7:hover {
+    background-color: palevioletred;
+    color: white;
+}
+.work hr{
+    margin-top: 50px;
+}
+.contact{
+    grid-column: 1 / 2;
+    text-align: center;
+}
+.nextPage{
+    grid-column: 2 /span 1;
+    text-align: center;
+}
+.nextPage button{
+    border: none;
+    border-radius: 20px;
+    padding: 26px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#next{
+    margin-top: 40px;
+    background-color: teal; 
+    color: whitesmoke; 
+    border: 2px solid whitesmoke;
+}
+#next:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon a{
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: brown;
+    border-radius: 50%;
+    margin: 22px 10px;
+    text-decoration: none;
+}
+.social-icon a:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: white;
+    background-position: center;
+    border-radius: 20px;
+    margin-top: 50px;
+
+    grid-column: 1 / span 2;
+}
+.footer p{
+    text-align: center;
+    margin: 30px 10px;
+}
+
+
+@media only screen and (max-width: 850px) {
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+        grid-gap: 10px;  
+        text-align: center;
+	}
+
+	#header{
+		grid-column: 1 / span 1;
+	}
+
+    .MyPic{
+        grid-column: 1 / span 1;
+    }
+
+    #main{
+        grid-column: 1 / span 1;
+    }
+
+    .about{
+        grid-column: 1 / span 1;
+    }
+
+    .skill{
+        grid-column: 1 / span 1;
+    }
+
+    .interest{
+        grid-column: 1 / span 1;
+    }
+
+    .work{
+        grid-column: 1 / span 1;
+    }
+
+    .contact{
+        grid-column: 1 / span 1;
+    }
+
+    .nextPage{
+        grid-column: 1 /span 1;
+    }
+
+
+}
+
+/* ----------------------project----------------------- */
+
+.project{
+    background-color: bisque;
+    margin: 40px;
+    padding: 60px;
+    border-radius: 50px;
+}
+
+.pro-header{
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.pro-header h1{
+    color: green;
+    font-size: 500%;
+    padding-left: 40px;
+    text-shadow: 3px 3px black;
+}
+
+.mat108 {
+    text-align: center;
+    color: limegreen;
+    font-size: 200%;
+}
+.mat108 p{
+    color: black;
+}
+
+#pic108 img{
+    margin: 40px;
+    width: 50%;
+    height: 50%;
+}
+#pic108 #artb{
+    width: 30%;
+    height: 30%;
+}
+
+.Animation {
+    text-align: center;
+    color: limegreen;
+    font-size: 200%;
+}
+.Animation p{
+    color: black;
+}
+
+#picAnm img{
+    margin: 40px;
+    width: 50%;
+    height: 50%;
+}
+
+
+
+.prevPage{
+    text-align: center;
+}
+.prevPage button{
+    border: none;
+    border-radius: 20px;
+    padding: 26px 48px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#prev{
+    margin-top: 40px;
+    background-color: rgb(202, 216, 0); 
+    color: rgb(0, 0, 0); 
+    border: 2px solid whitesmoke;
+}
+#prev:hover{
+    transform: scale(1.3);
+    transition: 0.3s;
+}
